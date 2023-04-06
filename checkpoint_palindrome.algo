@@ -1,0 +1,20 @@
+ 
+Algorithme Palindrome(T: tab[1..n]: caractère): booléen;
+Var
+    i, j: entier;
+    résultat: booléen;
+Debut
+    i := 1;
+    j := longueur(Mot);
+    résultat := Vrai;
+    TantQue ((résultat = Vrai) Et (i < j)) Faire
+        Si(T[i] = T[j]) Alors
+            résultat = Vrai;
+            i = i + 1;
+            j = j - 1;
+        Sinon
+            résultat := Faux;
+        FinSi
+    FinTantQue
+    Renvoyer résultat;
+Fin
